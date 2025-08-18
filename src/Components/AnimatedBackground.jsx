@@ -16,9 +16,11 @@ const AnimatedBackground = () => {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      points: 6.0, // 🔹 Net density কমালাম
-      backgroundColor: 0x0a192f, // 🔹 Navy Blue background
-      color: 0x64ffda, // 🔹 Net line color (Mint/Turquoise)
+      points: 6.0,
+      spacing: 20.0,
+      color: 0x64ffda, // teal color for points
+      backgroundAlpha: 0, // transparent, will show gradient
+      maxDistance: 25.0,
     });
 
     return () => {
@@ -26,7 +28,11 @@ const AnimatedBackground = () => {
     };
   }, []);
 
-  return <div ref={vantaRef} className="absolute inset-0 z-0" />;
+  return (
+    <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#1a1b2e] via-[#2c2d44] to-[#0f0c29]">
+      <div ref={vantaRef} className="w-full h-full" />
+    </div>
+  );
 };
 
 export default AnimatedBackground;
