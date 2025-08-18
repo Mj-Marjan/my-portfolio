@@ -24,7 +24,7 @@ const HeroSection = () => {
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 2 }}
             className="text-3xl font-bold bg-gradient-to-r from-[#64ffda] via-[#00fff0] to-[#00d9ff] bg-clip-text text-transparent drop-shadow-lg"
           >
             Frontend MERN Stack Developer
@@ -75,10 +75,15 @@ const HeroSection = () => {
           alt="profile"
           className="relative w-80 h-80 object-cover rounded-full  shadow-8xl hover:scale-105 transition-transform duration-300"
         />
-        <div className="absolute bottom-10 right-0 bg-gradient-to-r from-[#64ffda] to-[#00d9ff] px-4 py-2 rounded-xl shadow-lg">
+        <motion.div 
+         initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+        className="absolute bottom-10 right-0 bg-gradient-to-r from-[#64ffda] to-[#00d9ff] px-4 py-2 rounded-xl shadow-lg">
+            
           <p className="text-black font-bold">Full</p>
           <p className="text-sm text-gray-800">Stack Developer</p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
