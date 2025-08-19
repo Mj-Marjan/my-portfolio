@@ -24,7 +24,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-10xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-white">
           Port<span className="text-blue-400">folio</span>

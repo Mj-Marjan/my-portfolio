@@ -16,7 +16,7 @@ const NewsTicker = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <Marquee gradient={false} speed={60} className="py-38">
+    <Marquee gradient={false} speed={60} className="py-25">
       {items.map((item, index) => {
         const color = neonColors[index % neonColors.length];
         return (
@@ -51,7 +51,7 @@ const NewsTicker = () => {
             {/* Hover Card */}
             {hoverIndex === index && (
               <div
-                className="absolute top-14 left-1/2 transform -translate-x-1/2 w-64 bg-gray-900 bg-opacity-20 backdrop-blur-md rounded-xl p-4 shadow-lg border transition-all duration-300 scale-105 hover:scale-110 z-50"
+                className="absolute top-0 left-1/2 transform -translate-x-1/2 w-64 bg-gray-900 bg-opacity-20 backdrop-blur-md rounded-xl p-4 shadow-lg border transition-all duration-300 scale-105 hover:scale-110 z-50"
                 style={{
                   borderColor: color,
                   boxShadow: `0 0 15px ${color}, 0 0 30px ${color}, 0 0 45px ${color}`,
