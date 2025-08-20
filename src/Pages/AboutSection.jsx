@@ -20,7 +20,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
-import profile from "../assets/Marjan.png";
+import profile from "../assets/Mj.png";
 
 const AboutSection = () => {
   return (
@@ -38,7 +38,7 @@ const AboutSection = () => {
           <img
             src={profile}
             alt="profile"
-            className="relative w-48 h-48 md:w-80 md:h-80 object-cover rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
+            className="relative w-48 h-48 md:w-80 md:h-85 object-cover rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
           />
 
           {/* Resume Button */}
