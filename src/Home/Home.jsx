@@ -4,6 +4,7 @@ import NewsTicker from '../Pages/NewsTicker';
 import AboutSection from '../Pages/AboutSection';
 import SkillsSection from '../Pages/SkillsSection';
 import SkillsTicker from '../Pages/SkillsTicker';
+import ProjectsSection from '../Pages/ProjectsSection';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
              <AboutSection></AboutSection>
              <SkillsSection></SkillsSection>
              <SkillsTicker></SkillsTicker>
+             <ProjectsSection></ProjectsSection>
         </div>
     );
 };
