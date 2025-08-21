@@ -4,6 +4,7 @@ import AboutSection from "../Pages/AboutSection";
 import SkillsSection from "../Pages/SkillsSection";
 import ProjectsSection from "../Pages/ProjectsSection";
 import Education from "../Pages/Education";
+import Contact from "../Pages/Contact";
 
 const Home = () => {
   return (
@@ -13,10 +14,7 @@ const Home = () => {
       <SkillsSection id="skills" />
       <ProjectsSection id="portfolio" />
       <Education id="education" />
-      {/* Contact Section */}
-      <section id="contact" className="min-h-screen flex items-center justify-center bg-gray-500 text-white text-4xl">
-        Contact Section
-      </section>
+      <Contact id="contact" />
     </div>
   );
 };
