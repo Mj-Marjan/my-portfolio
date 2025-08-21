@@ -21,7 +21,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-10 text-white overflow-hidden">
+    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-10 text-white overflow-hidden" id="home">
 
       {/* Particles Background */}
       <Particles

@@ -7,6 +7,8 @@ import imageRoommate from "../assets/Roommat-finder.png";
 
 const projects = [
   {
+    id: 1,
+     key: "mcms",
     title: "MCMS Website",
     image: imageMCMS,
     github: "https://github.com/Mj-Marjan/Mj-Marjan-Medical-Camp-Management-System-client-side",
@@ -14,14 +16,18 @@ const projects = [
     route: "/projects/mcms",
   },
   {
+    id: 2,
     title: "lost-and-found-item",
+    key: "ecommerce",
     image: imageFAF,
     github: "https://github.com/Mj-Marjan/find-and-lose-website-client-side",
     live: "https://lost-and-found-item-74d5f.web.app/",
     route: "/projects/ecommerce",
   },
   {
+    id: 3,
     title: "Roommate Finder Website",
+    key: "portfolio",
     image: imageRoommate,
     github: "https://github.com/Mj-Marjan/Roomate-finder-website-clint-site",
     live: "https://auth-intrigation-roomate.web.app/",
@@ -33,7 +39,7 @@ export default function ProjectsSection() {
   const navigate = useNavigate();
 
   return (
-    <section className="py-16 text-white">
+    <section className="py-16 text-white" id="portfolio">
       <div className="max-w-6xl mx-auto text-center">
         <p className="text-white py-6">Explore</p>
         <h2 className="text-4xl font-bold mb-10 text-cyan-400"> 🚀 My Recent Projects</h2>
@@ -49,7 +55,7 @@ export default function ProjectsSection() {
               viewport={{ once: true }}
               
               animate={{ y: [0, -10, 0] }} // Floating animation
-              transition={{ duration: 3, repeat: 2, ease: "easeInOut", delay: index * 0.3 }}
+              transition={{ duration: 3, repeat: 1, ease: "easeInOut", delay: index * 0.3 }}
             >
               {/* Project Image */}
               <img
@@ -85,7 +91,7 @@ export default function ProjectsSection() {
 
                   {/* Right Side → View More */}
                   <button
-                    onClick={() => navigate(project.route)}
+                    onClick={() => navigate(`/projects/${project.key}`)}
                     className="px-3 py-1 bg-gradient-to-r from-[#64ffda] to-[#00d9ff] text-black font-semibold rounded-full hover:opacity-80 transition"
                   >
                     View More

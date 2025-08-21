@@ -35,9 +35,9 @@ const cardVariants = {
   visible: { opacity: 1, x: 0 },
 };
 
-export default function SkillsSection() {
+ function SkillsSection() {
   return (
-    <section className="py-16 text-white">
+    <section className="py-16 text-white " id="skills">
       <div className="max-w-6xl mx-auto text-center">
         {/* Gradient Headline */}
        <h2 className="text-4xl font-bold mb-6 text-cyan-400"> 💻My Skills</h2>
@@ -63,9 +63,7 @@ export default function SkillsSection() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               whileHover={{ scale: 1.08 }}
               animate={{ y: [0, -8, 0] }}
-              transition={{
-                y: { duration: 3, repeat: Infinity, ease: "easeInOut", delay: index * 0.2 },
-              }}
+              
             >
               {/* Shine Effect Layer */}
               <div className="absolute inset-0 rounded-2xl pointer-events-none">
@@ -93,3 +91,5 @@ export default function SkillsSection() {
     </section>
   );
 }
+
+export default SkillsSection;

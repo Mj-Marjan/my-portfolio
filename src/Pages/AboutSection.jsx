@@ -68,7 +68,7 @@ const AboutSection = () => {
             modern, and user-friendly web applications. Always curious and
             motivated to learn new technologies like{" "}
             <span className="text-cyan-300">Machine Learning</span>.I love
-            turning ideas into real products using{" "}
+            turning ideas into real products using <br />{" "}
             <span className="text-cyan-400">
               <Typewriter
                 words={["React, Node.js, and MongoDB."]}
