@@ -1,19 +1,21 @@
 import { motion } from "framer-motion";
-import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-20 px-6  text-white overflow-hidden"
+      className="relative py-20 px-6 text-white overflow-hidden"
     >
       {/* Background Blur Circles */}
       <div className="absolute top-20 -left-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute bottom-20 -right-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
 
-    <h2 className="text-4xl font-bold mb-20 text-cyan-400 text-center ">  📩 Contact Me</h2>
+      <h2 className="text-4xl font-bold mb-20 text-cyan-400 text-center">
+        📩 Contact Me
+      </h2>
 
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 relative z-10">
+      <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-12 relative z-10">
         {/* Left Info */}
         <motion.div
           className="space-y-6"
@@ -43,35 +45,30 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* Contact Form */}
-        <motion.form
-          className="bg-white/10 backdrop-blur-2xl p-8 rounded-3xl shadow-2xl border border-white/20 space-y-5"
-          initial={{ x: 50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
-        >
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full p-4 rounded-xl bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-4 rounded-xl bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
-          />
-          <textarea
-            rows="5"
-            placeholder="Your Message"
-            className="w-full p-4 rounded-xl bg-white/10 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
-          ></textarea>
-          <button
-            type="submit"
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 transition font-semibold shadow-lg hover:shadow-cyan-500/30"
-          >
-            Send Message 🚀
-          </button>
-        </motion.form>
+        {/* Contact Info */}
+       <motion.div
+  className="bg-white/10 backdrop-blur-2xl p-8 rounded-3xl shadow-2xl border border-white/20 space-y-6 
+             transition duration-500 hover:scale-105 hover:shadow-cyan-500/30 hover:border-cyan-400"
+  initial={{ x: 50, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: 0.7 }}
+>
+  <div className="flex items-center gap-4">
+    <FaMapMarkerAlt className="text-cyan-400 text-2xl" />
+    <p className="text-gray-200">Raipur, Lakshmipur, Bangladesh</p>
+  </div>
+
+  <div className="flex items-center gap-4">
+    <FaPhone className="text-cyan-400 text-2xl" />
+    <p className="text-gray-200">+880 1640-726858</p>
+  </div>
+
+  <div className="flex items-center gap-4">
+    <FaEnvelope className="text-cyan-400 text-2xl" />
+    <p className="text-gray-200">jahid.hossen.me@gmail.com</p>
+  </div>
+</motion.div>
+
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
   const navItems = ["home", "about", "skills", "portfolio","Education", "contact"];
 
@@ -16,10 +16,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (darkMode) document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
-  }, [darkMode]);
+  // useEffect(() => {
+  //   if (darkMode) document.documentElement.classList.add("dark");
+  //   else document.documentElement.classList.remove("dark");
+  // }, [darkMode]);
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-gray-900/95 backdrop-blur-md" : "bg-transparent"}`}>
@@ -44,10 +44,10 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center space-x-4">
-          <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
+          {/* <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white">
             {darkMode ? <Moon size={20} /> : <Sun size={20} />}
-          </button>
-          <button className="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+          </button> */}
+          <button className="x-6 p-2 px-3 rounded-full bg-gradient-to-r from-[#64ffda] to-[#00d9ff] text-black font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
             Download CV
           </button>
           <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>

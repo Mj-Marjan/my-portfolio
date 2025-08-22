@@ -24,7 +24,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-16 px-6 text-white">
+    <section className="py-16 px-6 text-white" id="education" >
       <h2 className="text-3xl font-bold text-center text-cyan-400 mb-12">
         🎓 Education
       </h2>
