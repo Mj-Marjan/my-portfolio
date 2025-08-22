@@ -33,13 +33,13 @@ export default function Contact() {
           </p>
 
           <div className="flex gap-6 text-3xl text-cyan-400">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/mdmarjan.mdmarjan.18" target="_blank" rel="noreferrer">
               <FaFacebook className="hover:scale-125 hover:text-blue-500 transition duration-300" />
             </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer">
+            <a href="https://github.com/Mj-Marjan" target="_blank" rel="noreferrer">
               <FaGithub className="hover:scale-125 hover:text-gray-400 transition duration-300" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/md-marjan/" target="_blank" rel="noreferrer">
               <FaLinkedin className="hover:scale-125 hover:text-blue-400 transition duration-300" />
             </a>
           </div>
@@ -55,17 +55,17 @@ export default function Contact() {
 >
   <div className="flex items-center gap-4">
     <FaMapMarkerAlt className="text-cyan-400 text-2xl" />
-    <p className="text-gray-200">Raipur, Lakshmipur, Bangladesh</p>
+    <p className="text-gray-200">Rangpure, Dhaka, Bangladesh</p>
   </div>
 
   <div className="flex items-center gap-4">
     <FaPhone className="text-cyan-400 text-2xl" />
-    <p className="text-gray-200">+880 1640-726858</p>
+    <p className="text-gray-200">+880 1701-598139</p>
   </div>
 
   <div className="flex items-center gap-4">
     <FaEnvelope className="text-cyan-400 text-2xl" />
-    <p className="text-gray-200">jahid.hossen.me@gmail.com</p>
+    <p className="text-gray-200">mdmarjan2233@gmail.com</p>
   </div>
 </motion.div>
 

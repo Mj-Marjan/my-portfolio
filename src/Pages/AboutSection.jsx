@@ -45,8 +45,8 @@ const AboutSection = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/resume.pdf"
-            download
+            href="https://docs.google.com/document/d/1nT99iz9b839DubTinHg_vCOGnoaXAhW9llWDmtUyS1k/edit?tab=t.0"
+            
             className="mt-6 inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-black font-semibold px-6 py-3 rounded-lg shadow-lg shadow-cyan-500/40 transition"
           >
             <Download size={18} /> Download Resume

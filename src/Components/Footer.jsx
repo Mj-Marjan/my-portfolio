@@ -11,10 +11,10 @@ export default function Footer() {
 
     emailjs
       .send(
-        "service_x3n7sy6",    // তোমার Service ID
-        "template_yoxjlhm",   // তোমার Template ID
+        "service_x3n7sy6", // তোমার Service ID
+        "template_yoxjlhm", // তোমার Template ID
         { user_email: email, message: message },
-        "GtrmG4jm7Xb-B3RMp"   // তোমার Public Key
+        "GtrmG4jm7Xb-B3RMp" // তোমার Public Key
       )
       .then(
         () => {
@@ -33,7 +33,19 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-cyan-400">Marjan</h2>
+          <h1 className="flex items-center space-x-3 text-3xl font-extrabold">
+            {/* লোগো - external URL */}
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+              alt="Logo"
+              className="w-10 h-10 object-contain"
+            />
+
+            {/* Gradient Name */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-400 to-purple-500 drop-shadow-lg">
+              MARJAN
+            </span>
+          </h1>
           <p className="mt-2 text-gray-400">
             Full Stack Web Developer | MERN Stack Enthusiast
           </p>
@@ -45,10 +57,26 @@ export default function Footer() {
             Quick Links
           </h3>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-cyan-400 transition">Home</a></li>
-            <li><a href="#projects" className="hover:text-cyan-400 transition">Projects</a></li>
-            <li><a href="#about" className="hover:text-cyan-400 transition">About</a></li>
-            <li><a href="#contact" className="hover:text-cyan-400 transition">Contact</a></li>
+            <li>
+              <a href="#home" className="hover:text-cyan-400 transition">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-cyan-400 transition">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-cyan-400 transition">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-cyan-400 transition">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -89,7 +117,8 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="border-t border-white/10 mt-10 pt-6 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} Md Asfier Rahman Marjan. All Rights Reserved.
+        © {new Date().getFullYear()} Md Asfier Rahman Marjan. All Rights
+        Reserved.
       </div>
     </footer>
   );
